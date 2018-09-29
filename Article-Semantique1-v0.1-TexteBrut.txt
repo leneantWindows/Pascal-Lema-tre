@@ -1,0 +1,83 @@
+
+Le microcosme de la protection sociale évolu.
+Il y a longtemps, chaque organisme vivait sa vie en quasie autonomie.
+Sous l'impulsion de la DSS (Direction de la Sécurité Sociale), ceci change.
+Aujourd'hui, de nombreux référentiels existent pour que les organismes partagent des informations.
+
+Les dernières évolutions font que même les processus de bout en bout (depuis la sollicitation de l'usager, jusqu'à
+la réponse apportée par la sécurité sociale) deviennent étendus (plusieurs Organisations différentent jouent des rôles
+dans ces processus). Récemment ce fut le cas avec la LURA (Liquidation Unique de la retraite pour les Régimes Alignés). Et bientôt ce sera aussi le cas avec la LUPI (Liquidation invalidité).
+
+Dans le contexte de la LURA, avant que le RSI ne soit mis dans le giron du régime général, 4 organisations participaient
+potentiellement à la réalisation d'un même processus :
+- La CNAV
+- Le RSI
+- Le PCIR (Portail Commun Inter-régime Retraite)
+- La MSA
+
+En synthétisant, le processus est constitué de 3 étapes principales :
+1- La réception de la demande de retraite
+2- La liquidation de la retraite
+3- La notification de ses droits à l'usager
+
+Chaque Organisme peut :
+- Réceptionner la demande.
+
+Seuls la CNAV, le RSI et la MSA peuvent :
+- Liquider la retraite
+- Notifier l'usager de ses droits
+
+Ce qui amène potentiellement les échanges suivants :
+1- PCIR -> CNAV
+2- PCIR -> RSI
+3- PCIR -> MSA
+4- CNAV -> RSI
+5- CNAV -> MSA
+6- RSI -> CNAV
+7- RSI -> MSA
+8- MSA -> CNAV
+9- MSA -> RSI
+
+Chacune de ces organisation a son propre système informatique qui parle sa propre langue.
+Par exemple :
+- Le PCIR parle le Cyrillique
+- La CNAV parle l'Hébreux
+- Le RSI parle le Mandarin
+- La MSA parle le vieux François
+
+Cette situation amène à concevoir, potentiellement, 9 échanges spécifiques (dans quelles langues).
+
+Pour ces échanges il faut assurer la juxtaposition des concepts de chaque langue entres eux.
+
+C'est là qu'intervient la Sémantique. En Architecture d'Entreprise afin de mettre en place des référentiels partagés et des échanges nous nous interressons à la Sémantique des Objets Métier (concepts métier mis en oeuvre dans le SI). 
+Ce qui permet de définir un standard sur les Objets Métier, les référentiels et les échanges.
+
+Dans l'état actuel de notre exemple, il faudrait travailler sur la Sémantique des différents langages afin de faire la conversion entre eux deux par deux.
+
+Ce qui amènerait une dépendance forte entre les Organisations. 
+1- Si l'une des organisations change de langage, elle devra refaire le travail avec les autres langages. Par exemple si la MSA passe du vieux François au Français, qu'elle communique en Hébreux avec la CNAV, en Mandarin et en Cyrillique, elle devra faire trois fois le travail. Le pire serait qu'elle ait des termes Cyrilliques dans son glossaire. Là l'effort serait encore plus important. 
+2- Si une nouvelle organisation arrive dans les échanges, elle devra faire l'exercice avec les autres langages. Ce qui obligera les autres Organisations à évoluer afin d'intégrer le nouveau participant.
+
+Ce que nous dit l'Architecture d'Entreprise c'est qu'il faut un standard. Ce standard étant défini au travers de la Sémantique.
+
+Reprennons notre exemple à 4 Organisations.
+Ensemble, elles définissent leur langage de communication. Dans la diplomatie, la langue est le Français. Mais dans cet exemple nous prendrons l'Anglais.
+Autour d'une table, ces organisations définissent la sémantique de leurs concepts partagés.
+
+A partir de ce moment, leurs référentiels communs, leurs échanges se feront en Anglais.
+Ainsi il n'y a plus qu'un seul type d'échange. Chaque Organisation faisant le lien entre sa propre langue et l'Anglais.
+Si nous reprenons les deux exemples précédents. Le premier une organisation change de langue, le deuxième une nouvelle organisation joue un ou plusieurs rôles dans le processus. 
+Dans les deux cas, l'évolution est simple. Il suffit que chacune utilise l'Anglais. Ainsi elles pourront échanger et accéder aux référentiels communs. Et il serait intéressant, que lors d'une évolution l'Organisation concernée opte pour la langue Anglaise. 
+
+Voilà pour la théorie...
+Mais comment celà se passe dans la vraie vie ?
+
+Et bien le cadre commun d'Urbanisation de l'état et son annexe qui traite des référentiels portent, dans leur méthode, ce principe.
+Il faut définir la Séantique avant de définir les données du référentiel ainsi que les échanges.
+Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certains nombre d'Objets Métier. Et de créer les standards pour les référentiels dit inter-régimes et les échanges inter-régimes.
+
+Ainsi un standard, une langue, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise ne oeuvre des processus étendus dans leur SI et dans leur outils informatiques.
+
+
+
+

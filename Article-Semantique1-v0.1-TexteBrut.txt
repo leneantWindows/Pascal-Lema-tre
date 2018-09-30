@@ -38,43 +38,43 @@ Ce qui amène potentiellement les échanges suivants :
 8- MSA -> CNAV
 9- MSA -> RSI
 
-Chacune de ces organisation a son propre système informatique qui parle sa propre langue.
+Chacune de ces organisations a son propre système informatique qui parle sa propre langue.
 Par exemple :
-- Le PCIR parle le Cyrillique
+- Le PCIR parle le Russe
 - La CNAV parle l'Hébreux
 - Le RSI parle le Mandarin
 - La MSA parle le vieux François
 
-Cette situation amène à concevoir, potentiellement, 9 échanges spécifiques (dans quelles langues).
+Cette situation amène potentiellemnt à concevoir 9 échanges spécifiques.
 
-Pour ces échanges il faut assurer la juxtaposition des concepts de chaque langue entres eux.
+Pour ces échanges il faut assurer la juxtaposition des concepts de chaque langue.
 
 C'est là qu'intervient la Sémantique. En Architecture d'Entreprise afin de mettre en place des référentiels partagés et des échanges nous nous interressons à la Sémantique des Objets Métier (concepts métier mis en oeuvre dans le SI). 
 Ce qui permet de définir un standard sur les Objets Métier, les référentiels et les échanges.
 
-Dans l'état actuel de notre exemple, il faudrait travailler sur la Sémantique des différents langages afin de faire la conversion entre eux deux par deux.
+Dans l'état actuel de notre exemple, il faudrait travailler sur la Sémantique des différents langages afin de faire la conversion entre eux comme sur le schéma.
 
 Ce qui amènerait une dépendance forte entre les Organisations. 
-1- Si l'une des organisations change de langage, elle devra refaire le travail avec les autres langages. Par exemple si la MSA passe du vieux François au Français, qu'elle communique en Hébreux avec la CNAV, en Mandarin et en Cyrillique, elle devra faire trois fois le travail. Le pire serait qu'elle ait des termes Cyrilliques dans son glossaire. Là l'effort serait encore plus important. 
-2- Si une nouvelle organisation arrive dans les échanges, elle devra faire l'exercice avec les autres langages. Ce qui obligera les autres Organisations à évoluer afin d'intégrer le nouveau participant.
+1- Si l'une des organisations change de langage, elle devra refaire le travail avec les autres langages. Par exemple si la MSA passe du vieux François au Français, qu'elle communique en Hébreux avec la CNAV, en Mandarin et en Russe, elle devra faire trois fois le travail. Le pire serait qu'elle ait des termes Russes dans son glossaire. Là l'effort serait encore plus important. 
+2- Si une nouvelle organisation arrive dans les échanges, elle devra faire l'exercice avec les autres langages. Ce qui pourrait amener les autres Organisations à évoluer afin d'intégrer la langue de ce nouveau participant.
 
 Ce que nous dit l'Architecture d'Entreprise c'est qu'il faut un standard. Ce standard étant défini au travers de la Sémantique.
 
 Reprennons notre exemple à 4 Organisations.
 Ensemble, elles définissent leur langage de communication. Dans la diplomatie, la langue est le Français. Mais dans cet exemple nous prendrons l'Anglais.
-Autour d'une table, ces organisations définissent la sémantique de leurs concepts partagés.
+Autour d'une table, ces organisations définissent la sémantique de leurs concepts partagés au travers de l'étude des Objets Métier.
 
 A partir de ce moment, leurs référentiels communs, leurs échanges se feront en Anglais.
-Ainsi il n'y a plus qu'un seul type d'échange. Chaque Organisation faisant le lien entre sa propre langue et l'Anglais.
+Ainsi il n'y a plus qu'un seul langage d'échange. Chaque Organisation faisant le lien entre sa propre langue et l'Anglais.
 Si nous reprenons les deux exemples précédents. Le premier une organisation change de langue, le deuxième une nouvelle organisation joue un ou plusieurs rôles dans le processus. 
-Dans les deux cas, l'évolution est simple. Il suffit que chacune utilise l'Anglais. Ainsi elles pourront échanger et accéder aux référentiels communs. Et il serait intéressant, que lors d'une évolution l'Organisation concernée opte pour la langue Anglaise. 
+Dans les deux cas, l'évolution est simple. Il suffit que chacune utilise l'Anglais. Ainsi elles pourront échanger et accéder aux référentiels communs. Et il serait intéressant, que lors d'une évolution, l'Organisation concernée opte pour la langue Anglaise. 
 
 Voilà pour la théorie...
 Mais comment celà se passe dans la vraie vie ?
 
-Et bien le cadre commun d'Urbanisation de l'état et son annexe qui traite des référentiels portent, dans leur méthode, ce principe.
+Le cadre commun d'Urbanisation de l'état et son annexe qui traite des référentiels portent, dans leur approche, ce principe.
 Il faut définir la Séantique avant de définir les données du référentiel ainsi que les échanges.
-Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certains nombre d'Objets Métier. Et de créer les standards pour les référentiels dit inter-régimes et les échanges inter-régimes.
+Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certain nombre d'Objets Métier. Et de créer les standards pour les référentiels dit inter-régimes et les échanges inter-régimes.
 
 Ainsi un standard, une langue, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise ne oeuvre des processus étendus dans leur SI et dans leur outils informatiques.
 

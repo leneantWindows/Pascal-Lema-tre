@@ -29,14 +29,11 @@ Seuls la CNAV, le RSI et la MSA peuvent :
 
 Ce qui amène potentiellement les échanges suivants :
 1- PCIR -> CNAV
-2- PCIR -> RSI
-3- PCIR -> MSA
-4- CNAV -> RSI
-5- CNAV -> MSA
-6- RSI -> CNAV
-7- RSI -> MSA
-8- MSA -> CNAV
-9- MSA -> RSI
+2- PCIR <-> RSI
+3- PCIR <-> MSA
+4- CNAV <-> RSI
+5- CNAV <-> MSA
+6- RSI <-> MSA
 
 Chacune de ces organisations a son propre système informatique qui parle sa propre langue.
 Par exemple :
@@ -45,7 +42,7 @@ Par exemple :
 - Le RSI parle le Mandarin
 - La MSA parle le vieux François
 
-Cette situation amène potentiellemnt à concevoir 9 échanges spécifiques.
+Cette situation amène potentiellemnt à concevoir 6 échanges spécifiques.
 
 Pour ces échanges il faut assurer la juxtaposition des concepts de chaque langue.
 
@@ -62,7 +59,7 @@ Ce que nous dit l'Architecture d'Entreprise c'est qu'il faut un standard. Ce sta
 
 Reprennons notre exemple à 4 Organisations.
 Ensemble, elles définissent leur langage de communication. Dans la diplomatie, la langue est le Français. Mais dans cet exemple nous prendrons l'Anglais.
-Autour d'une table, ces organisations définissent la sémantique de leurs concepts partagés au travers de l'étude des Objets Métier.
+Autour d'une table, ces Organisations définissent la sémantique de leurs concepts partagés au travers de l'étude des Objets Métier.
 
 A partir de ce moment, leurs référentiels communs, leurs échanges se feront en Anglais.
 Ainsi il n'y a plus qu'un seul langage d'échange. Chaque Organisation faisant le lien entre sa propre langue et l'Anglais.
@@ -72,15 +69,15 @@ Dans les deux cas, l'évolution est simple. Il suffit que chacune utilise l'Angl
 Voilà pour la théorie...
 Mais comment celà se passe dans la vraie vie ?
 
-Le cadre commun d'Urbanisation de l'état et son annexe qui traite des référentiels portent, dans leur approche, ce principe.
-Il faut définir la Séantique avant de définir les données du référentiel ainsi que les échanges.
-Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certain nombre d'Objets Métier. Et de créer les standards pour les référentiels dit inter-régimes et les échanges inter-régimes.
+Le cadre commun d'Urbanisation de l'état et son annexe qui traite des référentiels portent l'approche par la Sémantique afin de concevoir les référentiels et les échanges inter-régimes.
 
-Ainsi un standard, une langue, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise ne oeuvre des processus étendus dans leur SI et dans leurs outils informatiques.
+Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certain nombre d'Objets Métier. Et, à partir de cette Sémantique, de définir les référentiels et de créer leséchanges inter-régimes.
+
+Ainsi un standard, une langue, une Sémantique, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise en oeuvre des processus étendus dans leur SI et dans leurs outils informatiques.
 
 Cette situation amène une meilleure maîtrise du SI et le l'IT. Elle facilite l'évolution et le temps de réactivité. Il n'y a qu'un seul modèle sémantique et un seul modèle d'échange.
 
-De plus l'aspect économique est également maîtrisé est plus favorable.
+De plus l'aspect économique est également maîtrisé et est plus favorable.
 Une simulation des coûts d'investissement, d'évolution et de MCO permet de s'en rendre rapidement compte (cf. schémas suivants).
 En comptant 1 unité pour l'investissement dans un échange pour une langue donnée, nous avons le modèle suivant :
 PCIR : Une langue = 1
@@ -96,12 +93,12 @@ MSA : Une langue = 2
 RSI : Une langue = 2
 Investissement total au niveau de l'inter-régime = 8
 
-Nous constatons que, pour un certain nombre d'Organisation le coût d'investissement est supérieur. Pour une le coût est inférieur. Mais globalement, le coût marginal d'investissement n'est que très faiblement plus élevé = 14,3%
+A l'aide des graphiques, nous constatons que, pour un certain nombre d'Organisations le coût d'investissement est supérieur. Pour une le coût est inférieur. Mais globalement, le coût marginal d'investissement n'est que très faiblement plus élevé = 14,3%
 
-En réalisant le même exercice sur les coûts d'évolution et de MCO, nous constatons, qu'au niveau des Organisations soit les coûts sont constants, soient qu'ils diminuent.
+En réalisant le même exercice sur les coûts d'évolution et de MCO, nous constatons, qu'au niveau des Organisations soit les coûts sont constants, soit ils diminuent.
 
 Sachant que de tels échanges sont conçus pour durer, nous constatons, qu'économiquement, dans le temps, passer par un format avec une Sémantique commune est standardisée est plus avantageux que de réaliser des échanges ad hoc entre chaque Organisation. 
-Ceci amène à comprendre, que globalement, faut accepter un investissement plus important afin de maîtriser les coûts de maintiens en conditions opérationnelles et d'évolutions.
+Ceci amène à comprendre, que globalement, il faut accepter un investissement plus important afin de maîtriser les coûts de maintiens en conditions opérationnelles et d'évolutions. Au final, avec le modèle à une langue (une seule Sémantique), le coût global est inférieur.
 
 
 

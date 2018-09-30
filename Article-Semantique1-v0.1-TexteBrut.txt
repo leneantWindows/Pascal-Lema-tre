@@ -76,7 +76,32 @@ Le cadre commun d'Urbanisation de l'état et son annexe qui traite des référen
 Il faut définir la Séantique avant de définir les données du référentiel ainsi que les échanges.
 Dans l'actuel schéma directeur de la DSS, des travaux ont été initiés en septembre 2018. Ces travaux consistent à définir la Sémantique d'un certain nombre d'Objets Métier. Et de créer les standards pour les référentiels dit inter-régimes et les échanges inter-régimes.
 
-Ainsi un standard, une langue, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise ne oeuvre des processus étendus dans leur SI et dans leur outils informatiques.
+Ainsi un standard, une langue, va permettre à tous les régimes de coopérer et d'avoir plus de facilités pour intégrer la mise ne oeuvre des processus étendus dans leur SI et dans leurs outils informatiques.
+
+Cette situation amène une meilleure maîtrise du SI et le l'IT. Elle facilite l'évolution et le temps de réactivité. Il n'y a qu'un seul modèle sémantique et un seul modèle d'échange.
+
+De plus l'aspect économique est également maîtrisé est plus favorable.
+Une simulation des coûts d'investissement, d'évolution et de MCO permet de s'en rendre rapidement compte (cf. schémas suivants).
+En comptant 1 unité pour l'investissement dans un échange pour une langue donnée, nous avons le modèle suivant :
+PCIR : Une langue = 1
+CNAV : Une langue = 1
+MSA : Trois langues = 3
+RSI : Deux langues = 2
+Investissement total au niveau de l'inter-régime = 7
+
+Avec le modèle à une langue, la conception est plus couteuse. Le seul fait d'avoir 4 organisations augmente la complexité. Prenons un facteur 2 dans notre modélisation :
+PCIR : Une langue = 2
+CNAV : Une langue = 2
+MSA : Une langue = 2
+RSI : Une langue = 2
+Investissement total au niveau de l'inter-régime = 8
+
+Nous constatons que, pour un certain nombre d'Organisation le coût d'investissement est supérieur. Pour une le coût est inférieur. Mais globalement, le coût marginal d'investissement n'est que très faiblement plus élevé = 14,3%
+
+En réalisant le même exercice sur les coûts d'évolution et de MCO, nous constatons, qu'au niveau des Organisations soit les coûts sont constants, soient qu'ils diminuent.
+
+Sachant que de tels échanges sont conçus pour durer, nous constatons, qu'économiquement, dans le temps, passer par un format avec une Sémantique commune est standardisée est plus avantageux que de réaliser des échanges ad hoc entre chaque Organisation. 
+Ceci amène à comprendre, que globalement, faut accepter un investissement plus important afin de maîtriser les coûts de maintiens en conditions opérationnelles et d'évolutions.
 
 
 

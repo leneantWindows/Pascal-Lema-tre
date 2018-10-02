@@ -1,12 +1,13 @@
 
 Le microcosme de la protection sociale évolu.
-Il y a longtemps, chaque organisme vivait sa vie en quasie autonomie.
-Sous l'impulsion de la DSS (Direction de la Sécurité Sociale), ceci change.
-Aujourd'hui, de nombreux référentiels existent pour que les organismes partagent des informations.
+Il y a longtemps, chaque organisme vivait en quasie autonomie.
+Ceci change sSous l'impulsion de la DSS (Direction de la Sécurité Sociale).
+Aujourd'hui, de nombreux référentiels généraux existent pour que les organismes partagent des informations.
 
-Les dernières évolutions font que même les processus de bout en bout (depuis la sollicitation de l'usager, jusqu'à
-la réponse apportée par la sécurité sociale) deviennent étendus (plusieurs Organisations différentent jouent des rôles
-dans ces processus). Récemment ce fut le cas avec la LURA (Liquidation Unique de la retraite pour les Régimes Alignés). Et bientôt ce sera aussi le cas avec la LUPI (Liquidation invalidité).
+Les dernières évolutions font que même les processus de bout en bout (depuis la sollicitation de l'usager, jusqu'à la réponse apportée par la sécurité sociale) deviennent étendus (plusieurs Organisations différentent jouent des rôles dans ces processus). 
+Récemment ce fut le cas avec la LURA (Liquidation Unique de la retraite pour les Régimes Alignés). Et bientôt ce sera aussi le cas avec la LUPI (Liquidation invalidité).
+
+Dans un tel contexte, l'enjeu des échanges entre Organismes est important. 
 
 Dans le contexte de la LURA, avant que le RSI ne soit mis dans le giron du régime général, 4 organisations participaient
 potentiellement à la réalisation d'un même processus :

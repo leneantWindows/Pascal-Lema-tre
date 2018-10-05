@@ -1,0 +1,45 @@
+Comment mettre en place un référentiel sémantique d'Objets Métier
+
+I> Utilité
+
+Si nous prenons le monde de la sécurité sociale, plusieurs organismes interviennent pour assurer les individus contre un ensemble de risques (maladie, invalidité, ...). Le régime général est organisé selon ces risques (CNAV retraite, CPAM maladie, CNAF famille...). La MSA, pour les salariés agricoles et les non salariés agricoles, n'a pas aligné son organisation selon les risques. Elle offre un service de guichet unique qui traite l'ensemble des risques.
+
+Ces organismes doivent coopérer. Par exemple, avec la LURA (Liquidation Unique des retraites des Régimes Alignés), un Organisme d'un régime peut réceptionner la demande de retraite. Et un autre Organisme d'un autre régime peut être responsable de sa liquidation (cf. le graphique. i pouvant être égal ou différent de j et j pouvant être égal ou différent de k).
+
+Le processus d'ensemble est appelé processus étendu car il s'étend sur plusieurs Organisations. Et chacune de ces Organisations possède ses propres processus internes qui contribuent au processus global (processus étendu).
+
+Les frontières entre les parties, pouvant être prises en charge par des Organisations différentes, identifient les besoins d'échanges qu'il faut standardiser.
+
+En se conformant au cadre d'urbanisation du SI de l'état et de ses annexes, nous devons passer par la sémantique des Objets Métiers.
+
+Pour définir la sémantique et la partager entre Organismes, il est intéressant de disposer d'un référentiel commun.
+
+
+II> Qu'est-ce qu'un modèle Sémantique
+
+Toujours en se référent au cadre d'urbanisation du SI de l'état, la sémantique doit être définie en UML. La sémantique doit déterminer le language commun et partagé entre les Organisations. Et ce indépendemment de leurs implémentations dans les différents systèmes informatiques et les outils.
+Cette définition du language commun doit être compréhensible par des experts métier. Ceux-ci n'étant ni des opérationnels, ni des informaticiens. Il faut pouvoir générer des dictionnaires avec les descriptions et les définitions.
+La modélisation UML est nécessaire pour identifier ce qui est Objet Métier, de ce qui est information portée par un Objet Métier, de ce qui est une relation ou un rôle. Seul un tel modèle permet aussi de ne pas confondre Objet Métier et état du cycle de vie de l'Objet Métier.
+
+
+III> Mise en place d'un référentiel d'Objet Métier avec l'outil Magic Draw
+
+L'outil de modélisation Magic draw est un exemple d'outil UML qui permet de mettre en place un référentiel d'Objets Métiers.
+Avec ses possibilités de génération de rapport, il est assez facile de produire automatiquement un dictionnaire à partir du modèle sémantique du référentiel.
+
+L'utilisation de stéréotypes dédiés permet de générer un tel dictionnaire "papier". Intégrer des stéréotypes "definition", "description",... permet d'ajouter ces éléments dans le référentiel sous la forme de notes (cf. les schémas suivants). La génération du rapport les imprimant automatiquement. Ce mécanisme est valable pour les classes (Objets Métier), pour les attributs de la classe (informations) et pour les états du cycle de vie (état du diagramme de machine à état). 
+
+IV> DU SI à l'IT
+
+Un autre avantage d'utiliser un tel outil et de pouvoir faire le lien entre les Objets Métiers de la strate fonctionnelle avec les Objets Opérationnels (données) de la strate applicative.
+En créant deux packages, un SI et un IT, il est possible de définir la sémantique dans le package SI et de définir les données, du point de vue logique, dans le package IT. Ensuite en mettant des relations entre les classes des deux packages, il est possible de représenter les liens entre les deux mondes (la couverture des Objets Métiers par les Objets Opérationnels).
+
+A l'aide des liens entre les Objets Métier du SI (classes UML) et les Objets Opérationnels (vue logique de l'IT), il est aisé de faire rapidement des analyse d'impacts en recherchant les liens entre classes.
+
+V> Une nouvelle technique ?
+
+Des techniques et méthodes existent déjà tel que le web semantic et RDF (Resource Description Framework). S'agit-il d'une énième façon de faire ? 
+Dans un certain sens oui mais pas seulement... 
+Le Web Semantic et RDF servent surtout à la compréhension entre ordinateurs et applications.
+Ici, il n'est question que d'appliquer les principes de l'Architecture d'Entreprise à l'aide d'un outil UML. Le modèle sémantique des Objets Métiers est avant tout fait pour que des individus d'Organisations distinctes puissent utiliser les mêmes concepts derrières les mêmes termes. Ensuite cela est décliné en un modèle logique de données qui peut être mis en oeuvre via le web sémantique, RDF ou autrement. 
+Sans l'étape de définition des OM (Objets Métiers) et de leur définition, il serait compliqué d'identifier précisément et rationnellement quelles informations devront être échangées entre les systèmes informatiques des organisations.

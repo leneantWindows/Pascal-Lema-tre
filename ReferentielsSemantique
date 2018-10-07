@@ -43,4 +43,4 @@ Dans un certain sens oui mais ...
 Le Web Semantic et RDF servent surtout à la compréhension entre ordinateurs et applications.
 Ici, il n'est question que d'appliquer les principes de l'Architecture d'Entreprise à l'aide d'un outil UML. Le modèle sémantique des Objets Métiers est avant tout fait pour que des individus d'Organisations distinctes puissent utiliser les mêmes concepts derrières les mêmes termes. Ensuite cela est décliné en un modèle logique de données. Les échanges entre applications peuvent être mis en oeuvre via le web sémantique, RDF ou autrement. 
 
-Sans l'étape de définition des OM (Objets Métiers) et de leur définition, il serait compliqué d'identifier précisément et rationnellement quelles informations devront être échangées entre les systèmes informatiques des organisations.
+Sans l'étape de définition des OM (Objets Métiers) et de leur définition, il serait compliqué d'identifier précisément et rationnellement quelles données devront être échangées entre les systèmes informatiques des organisations.

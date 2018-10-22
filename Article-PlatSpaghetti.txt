@@ -1,0 +1,46 @@
+Cuisinner ses spaghettis
+
+Sous ce titre léger ce cache un problème que connaissent tous les Architectes d'Entreprise. Même sans être du métier lorsque l'on parle du plat de spaghetti de l'IT, tout le monde comprend que les échanges entre applications n'est pas maîtrisé.
+
+Tous nous sommes d'accord pour considérer qu'une mauvaise maîtrise des échanges est néfaste pour l'IT.
+
+Est-il possible de mesurer celà ?
+
+La première idée est de compter les échanges. Mais le nombre d'échange, sauf à optimiser les flux applicatifs, restera le même. Bien sur un même flux peut embarquer deux échanges ayant le même émetteur, le même destinataire et la même fréquence. Il s'agit d'une optimisation.
+
+Avant de penser optimisation, il faut penser maîtrise.
+
+Généralement les plats de spaghettis sont le résultat de l'évolutionde de l'IT dans le temps. Au fil des projets, les besoins d'échanges se sont accrus. Alors la nouvelle application modifie l'ancienne en faisant deux interfaces (fonctions) d'échanges. La première pour la nouvelle application et la seconde pour l'ancienne application.
+
+A ce moment il serait possible de compter le nombre d'interface des applications IT pour communiquer entres-elles. Mais dans ce cas, il devient difficile d'estimer le "poids" de ces interfaces par rapport au poids fonctionnel total des applications.
+
+Pour évaluer le "poids" fonctionnel des applications, en 1979, Allan Albrecht d'IBM inventa les points de fonctions. Aujourd'hui l'IFPUG maintien ce métrique et les règles de mesures. En 2003 l'ISO en a fait une norme. L'ASSEMI (1998) porte les points de fonctions IFPUG en France.
+
+Le principe des points de fonctions est de compter (cf. tableau des mesures PF) :
+- les groupes de données externes visibles via l'application (GDE) ;
+- les groupes de données de l'applications, elles aussi visibles depuis l'extérieur de celle-ci (GDI) ;
+- toutes les fonctions qui permettent d'échanger avec l'application (Entrée ENT, Sortie SOR, Interrogation INT).
+Avec une telle mesure, naturellement, les interfaces d'échanges entre applications seront pris en compte.
+
+Afin de mesurer l'évolution du plat de spaghettis, il suffit de faire un sous-total des points de fonctions liés aux échanges inter-applicatifs.
+
+Ramener ce nombre à celui des échanges, nous obtenons un ratio. Si les échanges se normalisent, qu'une même interface émette vers plusieurs applications ou qu'une même interface recoive des flux de plusieurs applications, le taux diminue. A l'opposé soit il stagne, soit il augmente.
+De plus mesurer le pourcentage de points de fonction dévolue aux échanges intra-applications par rapport au nombre total permet de mesurer l'importance des échanges par rapport à la valeur apportée au métier.
+
+Prenons un exemple simple :
+6 composants (applications) sont inter-connectés par 10 échanges. Dans le premier cas, chaque échange a été réalisé à façon avec son propre couple d'interfaces. Dans le second cas, certains échanges ont été normalisés et ont permis de ne faire qu'un interface émetteur vers plusieurs composants destinataires ou un interface de réception de flux qui proviennent de plusieurs émetteurs.
+
+Dans les deux cas le nombre d'échange est le même. Dans les deux cas les fonctions de l'échange sont de même nature (Sorties SOR, entrées ENT ou interrogation INT).
+Les deux graphes représentent les deux cas.
+
+En réalisant une matrice d'adjacence (cf. ci-dessous) pour chaque scénario, et en appliquant les poids moyens IFPUG selon la nature des fonctions d'échanges, il est possible de comparer les deux cas (cf. les tableaux de mesures des composants).
+
+La première constatation est que le nombre total de points de fonction est plus faible dans le second cas. ce qui dénote une complexité en terme de volume plus faible.
+Ce qui est également visible si, par exemple, nous comparons les poids des composants 1 et 4.
+Ce qui se confirme visuellement sur les graphes.
+
+Ainsi si le composant 1 évolue, dans le premier cas, 6 interfaces doivent évoluer. Alors que dans le second cas seules 4 interfaces doivent changer.
+
+Avec ce mécanisme de mesure nous pouvons visualiser l'évolution du poids de la maîtrise ou de la non maîtrise des changes IT. (cf. évolution du ratio pour un même nombre d'échanges et une variation du nombre de PF).
+
+De cet exemple, nous comprenons, en partie, l'importance de la standardisation des échanges. Seule cette standardisation permet de "multiplexer" les échanges via de mêmes interfaces. Nous comprenons aussi pourquoi le cadre d'Urbanisation du SI de l'état insiste autant sur la sémantique. La sémantique servant à définir les standards d'échanges évitant de devoir créer des échanges à façon à cause de concepts et d'échanges non normalisés et spécifiques entre applications et organismes différents.

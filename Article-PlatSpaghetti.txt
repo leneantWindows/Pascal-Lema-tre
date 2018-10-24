@@ -1,8 +1,8 @@
 Cuisinner ses spaghettis
 
-Sous ce titre léger ce cache un problème que connaissent tous les Architectes d'Entreprise. Même sans être du métier lorsque l'on parle du plat de spaghetti de l'IT, tout le monde comprend que les échanges entre applications n'est pas maîtrisé.
+Sous ce titre léger ce cache un problème que connaissent tous les Architectes d'Entreprise. Même sans être du métier lorsque l'on parle du plat de spaghetti de l'IT, tout le monde comprend que les échanges entre applications ne sont pas maîtrisé.
 
-Tous nous sommes d'accord pour considérer qu'une mauvaise maîtrise des échanges est néfaste pour l'IT.
+Tous nous sommes d'accord pour considérer qu'une mauvaise maîtrise des échanges est néfaste pour l'IT. Le nombre amenant la complexité, la difficulté à maîtriser l'ensemble, à les maintenir et à faire évoluer l'IT.
 
 Est-il possible de mesurer celà ?
 

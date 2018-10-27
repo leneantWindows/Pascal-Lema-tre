@@ -1,0 +1,89 @@
+Assaisonnement de notre plat de Spaghettis !
+
+Dans un article précédent, j'ai montré l'intérêt de la mesure des composants par les points de fonctions.
+J'ai présenté les échanges et l'intérêt de passer par des standards et des mêmes interfaces afin d'en maîtriser la valeur fonctionnelle.
+
+Dans cet ancien article je n'ai pas envisagé l'utilisation de chaînes de liaisons. Une chaîne de liaison offre l'infrastructure afin de router des données depuis un émetteur vers un ou plusieurs destinataires. Généralement les chaînes de liaisons s'appuient sur des composants d'échanges. Ces composants prennent en charge l'acheminement des données au travers de l'IT.
+
+Avec 3 scénarios simples, je vais montrer l'intérêt et les inconvénients de concevoir les chaînes de liaisons de telles ou telles façon.
+
+Je montrerai les principes liés à la mesure et ceux liés à l'Architecture d'Entreprise afin d'opter pour la solution la plus équilibrée.
+
+Prenons les deux diagrammes génériques suivants :
+
+<diagrammes>
+
+En jaune les échanges synchrones sur lesquels je base mon explication.
+En bleu les échanges asynchrones que je ne développerai pas. Mais le principe est exactement le même que pour les synchrones.
+
+Génériques car ils présentent deux scénarios :
+1- Deux applications qui communiquent intègrent dans la chaîne de liaison l'interface de transformation de leurs formats de données dans un format supporté par la plateforme d'échange. L'exemple présente deux applications. Il s'agit d'un n-upplet avec n = 1. L'exemple est généralisable avec n > 1. Avec n = 2, l'instanciation de cet exemple comporterait 4 applications (communiquantes 2 à 2) et 4 interfaces d'échanges.
+2- Deux application, qui communiquent, prennent en charge, à leur compte, la transformation dans le format supporté par la plateforme d'échanges. Comme pour le premier cas nous avons un n-upplet. Avec n = 2 nous aurions 4 applications qui communiquent 2 à 2.
+
+Du point de vue de l'Architecture d'Entreprise, seule la première solution respecte le principe de "périmètre de responsabilité" et de "couplage faible". La notion de "périmètre de responsabilité" précise qu'un composant a un périmètre de responsabilité qui doit être aligné sur son objectif. Celui des applications, n'est pas de gérer les échanges. Par exemple, pour les applications métier, l'objectif est d'apporter des services à valeur métier et non de gérer des échanges. Dans ce contexte il est cohérent de positionner les interfaces d'échanges dans le périmètre de la chaîne de liaison.
+
+Du point de vue de la mesure, nous constatons que la première solution est bien plus complexe fonctionnellement que la seconde.
+
+<tableaux de mesures>
+
+Alors que faire ?
+
+La première solution reste la meilleure sur le long terme. En effet, la notion de "périmètre de responsabilité" est un moyen de mettre en oeuvre le principe de "couplage faible". Avec les évolutions technologiques, la complexification de l'IT, il est probable que le composant responsable du routage soit remplacé par un autre dont les formats évoluent.
+Dans ce contexte seule la première solution garantie que les impacts seront limités. Seules les interfaces d'échanges seront touchées.
+
+Reste un dernier scénario que je n'ai pas abordé. Celui-ci s'appuie sur la standardisation. L'Architecture d'Entreprise apprécie beaucoup la standardisation...
+Cette standardisation concerne l'interfaçage entre les applications et l'"interface d'échange" (oui il n'y en aurait plus qu'une pouvant être instanciée).
+
+En normalisant les communications entre les applications et l'interface d'échange, le problème se simplifie. Il respecte la notion de "périmètre de responsabilité" et ce scénario converge vers la même valeur que de le 2.
+
+Les scénarios peuvent être modélisés mathématiquement.
+Le premier scénario :
+1- La mesure points de fonctions (mesure moyenne) : 
+   * Le système d'échanges 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 sortie = 5 PF.
+   * Les interfaces d'échanges :
+     * 2 entrées = 2 * 4 PF (1 avec le système d'échanges, 1 avec l'application)
+     * 2 interrogations 2 * 4 PF (1 avec le système d'échanges, 1 avec l'application)
+     * 2 sorties = 2 * 5 PF (1 avec le système d'échanges, 1 avec l'application)
+     et ce pour chaque applications connectées ( * n applications).
+   * Les applications (4 + 5 + 4 PF) (1 entrée, 1 sortie, 1 interrogation) ( * n applications)
+2- Le nombre d'échanges :
+   6 vers chaque interface d'échange
+   3 entre l'interface d'échange et son application.
+
+Le deuxième scénario :
+1- La mesure points de fonctions (mesure moyenne) :
+   * Le système d'échanges 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 sortie = 5 PF
+   * Les applications  1 entrée = 4 PF, 1 interrogation = 4 PF, 1 sortie = 5 PF ( * n applications)
+2- Le nombre d'échanges :
+   * Du système d'échanges vers les applications 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 sortie = 5 PF ( * n applications)
+  
+Le troisième scénario :
+1- La mesure points de fonctions (mesure moyenne) :
+   * Le système d'échanges 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 Sortie = 5 PF vers l'interface d'échanges
+   * L'interface d'échanges :
+     * Vers le système d'échanges : 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 Sortie = 5 PF.
+     * Vers les applications : 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 Sortie = 5 PF ( * n applications)
+   * Les applications : 1 entrée = 4 PF, 1 interrogation = 4 PF, 1 Sortie = 5 PF ( * n applications)
+2- Le nombre d'échanges :
+   * 6 entre le système d'échanges et l'interface d'échanges
+   * 3 * le nombre d'applications entre les applications et l'interface d'échanges.
+
+Ce qui nous donne les courbes suivantes :
+1> Le nombre de points de fonctions par scénario
+<graph 1>
+
+2> Le nombre d'échanges par scénario
+<graph 2>
+
+3> Le taux
+<graph 3>
+
+En terme de "maîtrise" le scénario 3 donne une mesure plus favorable des trois. Cela même si le cotation PF est supérieure à celle du scénario 2. Mais l'élévation du nombre de PF est compensée par celle du nombre d'échanges due à la mise en place de la standardisation de l'interface d'échanges. Ce qui confirme que cette approche apporte une meilleure maîtrise que celles employées dans des deux autres scénarios.
+
+Les PF ne sont qu'un instrument de mesure. Il faut les utiliser à bon escient. Le taux présenté montre l'efficacité des choix d'Architecture sur la conception des échanges. Cette mesure dépend du poids donctionnel des interfaces et du nombre d'échanges. Dans notre exemple (scénario 3) l'usage de la cotation PF peut aussi permettre de mesurer le poids fonctionnel des évolutions du système d'échanges. Le scénario 3 donne la mesure la plus faible car l'impact est limité au système d'échange et à la moitié du poids de l'interface d'échanges. Dans les scénario 1 il y a autant d'interfaces d'échanges que d'application ce qui augmente le poids fonctionnel des impacts de l'évolution. Pour le scénario 2 toutes les applications qui échangent sont impactées.
+
+Avec cet exemple j'ai montré en quoi les cotations en points de fonctions peuvent être une aide au choix pour décider rationnellement quelle serait l'architecture à mettre en place.
+
+Dans cet aricle j'ai pris le parti, pour le scénario 3, que les applications échangent des données standardisées. J'en ai montré l'intérêt dans l'article Semantique.
+
+Rédacteur : Pascal Lemaître

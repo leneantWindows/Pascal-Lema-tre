@@ -81,10 +81,10 @@ Ce qui nous donne les courbes suivantes :
 
 En terme de "maîtrise" le scénario 3 donne une mesure plus favorable des trois. Cela même si le cotation PF est supérieure à celle du scénario 2. Mais l'élévation du nombre de PF est compensée par celle du nombre d'échanges due à la mise en place de la standardisation de l'interface d'échanges. Ce qui confirme que cette approche apporte une meilleure maîtrise que celles employées dans des deux autres scénarios.
 
-Les PF ne sont qu'un instrument de mesure. Il faut les utiliser à bon escient. Le taux présenté montre l'efficacité des choix d'Architecture sur la conception des échanges. Cette mesure dépend du poids donctionnel des interfaces et du nombre d'échanges. Dans notre exemple (scénario 3) l'usage de la cotation PF peut aussi permettre de mesurer le poids fonctionnel des évolutions du système d'échanges. Le scénario 3 donne la mesure la plus faible car l'impact est limité au système d'échange et à la moitié du poids de l'interface d'échanges. Dans les scénario 1, il y a autant d'interfaces d'échanges que d'applications ce qui augmente le poids fonctionnel des impacts de l'évolution. Pour le scénario 2 toutes les applications qui échangent sont impactées.
+Les PF ne sont qu'un instrument de mesure. Il faut les utiliser à bon escient. Le taux présenté montre l'efficacité des choix d'Architecture sur la conception des échanges. Cette mesure dépend du poids fonctionnel des interfaces et du nombre d'échanges. Dans notre exemple (scénario 3) l'usage de la cotation PF peut aussi permettre de mesurer le poids fonctionnel des évolutions du système d'échanges. Le scénario 3 donne la mesure la plus faible car l'impact est limité au système d'échange et à la moitié du poids de l'interface d'échanges. Dans les scénario 1, il y a autant d'interfaces d'échanges que d'applications ce qui augmente le poids fonctionnel des impacts de l'évolution. Pour le scénario 2 toutes les applications qui échangent sont impactées.
 
 Avec cet exemple j'ai montré en quoi les cotations en points de fonctions peuvent être une aide au choix pour décider rationnellement quelle serait l'architecture à mettre en place.
 
-Dans cet aricle j'ai pris le parti, pour le scénario 3, que les applications échangent des données standardisées. J'en ai montré l'intérêt dans l'article Sémantique.
+Dans cet article j'ai pris le parti, pour le scénario 3, que les applications échangent des données standardisées. J'en ai montré l'intérêt dans l'article Sémantique.
 
 Rédacteur : Pascal Lemaître

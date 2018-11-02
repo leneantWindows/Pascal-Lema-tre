@@ -15,7 +15,10 @@
    version="1.1"
    id="svg1042"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="ProcessFonctionnelApplicatifCouvertureApplicative.svg">
+   sodipodi:docname="ProcessFonctionnelApplicatifCouvertureApplicative.svg"
+   inkscape:export-filename="/home/pascal/Documents/Boulot/Articles/Pascal Lemaître/MatieresPremieres/CouvertureApplicative.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <defs
      id="defs1036">
     <marker
@@ -117,7 +120,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.47"
-     inkscape:cx="521.07652"
+     inkscape:cx="111.50205"
      inkscape:cy="370.94235"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -135,7 +138,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
